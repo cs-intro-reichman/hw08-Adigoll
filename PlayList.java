@@ -47,12 +47,9 @@ class PlayList {
         {
             return false;
         }
-        else
-        {
-            tracks[size-1] = track;
-            size++;
-            return true;
-        }
+        tracks[size] = track;
+        size++;
+        return true;
     }
 
     /** Returns the data of this list, as a string. Each track appears in a separate line. */
@@ -174,6 +171,7 @@ class PlayList {
             tracks[x] = other.getTrack(i);
             x++;
         }
+        size+= other.getSize();
     }
 
     /** Returns the index in this list of the track that has the shortest duration,
