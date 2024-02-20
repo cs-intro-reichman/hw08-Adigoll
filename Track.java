@@ -1,5 +1,6 @@
 /** Represents a music track. A track has a title (String), an artist (String), 
  *  and a duration (int), in seconds. */
+
 class Track {
     private String title;
     private String artist;
